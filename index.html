@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>CélesteOS // Bienvenue dans ton nuage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="desktop">
+
+<div class="icon" onclick="openWin('win-heart')">
+<div class="pixel-icon">☁️</div>
+<span>Nuage_Zen</span>
+</div>
+
+<div class="icon" onclick="openWin('win-art')">
+<div class="pixel-icon">🌸</div>
+<span>Jardin_JS</span>
+</div>
+
+<div class="icon" onclick="openWin('win-bin')">
+<div class="pixel-icon">🗑️</div>
+<span>Corbeille</span>
+</div>
+
+<div id="win-heart" class="window">
+<div class="window-header">
+<span class="title"> Libération_Émotionnelle.exe</span>
+<div class="controls">
+<button class="win-btn" onclick="minimizeWin('win-heart')">–</button>
+<button class="win-btn" onclick="closeWin('win-heart')">x</button>
+</div>
+</div>
+<div class="window-content">
+<p>Écris un souci qui te pèse, il va s'envoler...</p>
+<input type="text" id="worry-input" placeholder="Taper ici...">
+<button class="retro-button" onclick="evaporateWorry()">Évaporer</button>
+<div id="zen-message"></div>
+</div>
+</div>
+
+<div id="win-art" class="window">
+<div class="window-header">
+<span class="title">🎨 Atelier_Botanique.sys</span>
+<div class="controls">
+<button class="win-btn" onclick="minimizeWin('win-art')">–</button>
+<button class="win-btn" onclick="closeWin('win-art')">x</button>
+</div>
+</div>
+<div class="window-content">
+<div id="art-zone"></div>
+<button class="retro-button" onclick="plantPixel()">Planter un Pixel</button>
+</div>
+</div>
+
+<div id="win-bin" class="window">
+<div class="window-header">
+<span class="title">🗑️ Corbeille</span>
+<div class="controls">
+<button class="win-btn" onclick="minimizeWin('win-bin')">–</button>
+<button class="win-btn" onclick="closeWin('win-bin')">x</button>
+</div>
+</div>
+<div class="window-content">
+<p>La corbeille est vide… pour l’instant 🌫️</p>
+</div>
+</div>
+
+</div>
+
+<div id="taskbar">
+<button id="start-menu">🥀</button>
+<div id="clock">00:00</div>
+</div>
+
+<div id="start-panel">
+<div class="start-item" onclick="openWin('win-heart')">☁️ Nuage_Zen</div>
+<div class="start-item" onclick="openWin('win-art')">🌸 Jardin_JS</div>
+<div class="start-item" onclick="openWin('win-bin')">🗑️ Corbeille</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
